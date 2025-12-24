@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-black dark:bg-neutral-900 dark:text-white;
+}
+
+a {
+  @apply hover:underline;
+}
+
+main {
+  @apply max-w-4xl mx-auto px-4 py-10;
+}
+
+footer {
+  @apply text-center text-gray-500 py-10 text-sm;
+}
+
+/* Hide scrollbar but allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
